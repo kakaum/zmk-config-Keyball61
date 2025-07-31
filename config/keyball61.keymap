@@ -103,7 +103,6 @@
 
             label = "Mouse";
         };
-    };
 
         scroll_layer {
             label = "Scroll";
@@ -126,6 +125,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
+    };
 
 
     conditional_layers {
