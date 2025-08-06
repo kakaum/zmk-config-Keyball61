@@ -42,6 +42,21 @@
             bindings = <&mkp RCLK>;
             key-positions = <33 34>;
         };
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <45 46>;
+        };
+
+        dragscroll {
+            bindings = <&mo 5>;
+            key-positions = <46 47>;
+        };
+
+        mb2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <47 48>;
+        };
     };
 
     keymap {
