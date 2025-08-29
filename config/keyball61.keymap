@@ -28,19 +28,19 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse_button_left {
-            bindings = <&mkp LCLK>;
-            key-positions = <31 32>;
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <45 46>;
         };
 
-        scroll {
+        dragscroll {
             bindings = <&mo 5>;
-            key-positions = <32 33>;
+            key-positions = <46 47>;
         };
 
-        mouse_button_right {
+        mb2 {
             bindings = <&mkp RCLK>;
-            key-positions = <33 34>;
+            key-positions = <47 48>;
         };
     };
 
@@ -50,21 +50,21 @@
         base_layer {
             label = "Base";
             bindings = <
-&kp GRAVE       &kp N1     &kp N2        &kp N3        &kp N4  &kp N5                                                 &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp BSPC
-&kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T                                                  &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp ESC         &kp A      &kp S         &kp D         &kp F   &kp G                                                  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z      &kp X         &kp C         &kp V   &kp B             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-&mo 6           &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 5   &mt LEFT_GUI RET  &mo 1             &mo 2              &kp SPACE                              &mo 3     &mo 4
+&kp GRAVE         &kp N1        &kp N2            &kp N3  &kp N4  &kp N5                                                 &kp N6     &kp N7  &kp N8     &kp N9   &kp N0         &kp BSPC
+&kp TAB           &kp Q         &kp W             &kp E   &kp R   &kp T                                                  &kp Y      &kp U   &kp I      &kp O    &kp P          &kp BACKSLASH
+&kp ESC           &kp A         &kp S             &kp D   &kp F   &kp G                                                  &kp H      &kp J   &kp K      &kp L    &kp SEMI       &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X             &kp C   &kp V   &kp B             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 6   &mo 5   &mt LEFT_GUI RET  &mo 1             &mo 2              &kp SPACE                              &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         lower_layer {
             bindings = <
-&trans                 &trans             &trans  &trans  &trans  &trans                  &trans         &trans        &trans        &trans        &trans  &kp DELETE
-&trans                 &trans             &trans  &trans  &trans  &trans                  &kp LS(EQUAL)  &kp N7        &kp N8        &kp N9        &trans  &kp MINUS
-&kp LC(LA(LG(SPACE)))  &kp LC(LA(LG(A)))  &trans  &trans  &trans  &trans                  &kp EQUAL      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans                 &kp LC(LA(LG(Z)))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp RETURN
-&trans                 &trans             &trans  &trans  &trans  &trans  &trans  &trans  &kp N0                                                   &trans  &trans
+&trans                 &trans             &trans          &trans          &trans           &trans                  &trans         &trans        &trans        &trans        &trans  &kp DELETE
+&trans                 &trans             &trans          &mmv MOVE_UP    &trans           &trans                  &kp LS(EQUAL)  &kp N7        &kp N8        &kp N9        &trans  &kp MINUS
+&kp LC(LA(LG(SPACE)))  &kp LC(LA(LG(A)))  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                  &kp EQUAL      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&trans                 &kp LC(LA(LG(Z)))  &mkp MCLK       &mkp LCLK       &mkp RCLK        &trans  &trans  &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp RETURN
+&trans                 &trans             &trans          &trans          &trans           &trans  &trans  &trans  &kp N0                                                   &trans  &trans
             >;
 
             label = "Lower";
@@ -84,11 +84,11 @@
         adjust_layer {
             label = "Adjust";
             bindings = <
-&trans  &trans  &trans                 &trans                     &trans  &trans                                 &trans  &trans                   &trans  &trans  &trans                         &trans
-&trans  &trans  &trans                 &trans                     &trans  &kp LS(LA(LC(LG(T))))                  &trans  &kp LS(LA(K_VOLUME_UP))  &trans  &trans  &kp K_PLAY_PAUSE               &trans
-&trans  &trans  &kp LS(LA(LC(LG(S))))  &kp LS(LA(K_VOLUME_DOWN))  &trans  &trans                                 &trans  &kp LS(LA(LC(LG(J))))    &trans  &trans  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SINGLE_QUOTE))))
-&trans  &trans  &trans                 &kp LS(LC(LA(LG(C))))      &trans  &trans                 &trans  &trans  &trans  &trans                   &trans  &trans  &trans                         &trans
-&trans  &trans  &trans                 &trans                     &trans  &trans                 &trans  &trans  &trans                                           &trans                         &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1           &bt BT_SEL 2               &bt BT_SEL 3  &trans                                 &trans  &trans                   &trans  &trans  &trans                         &bt BT_CLR
+&trans  &trans        &trans                 &trans                     &trans        &kp LS(LA(LC(LG(T))))                  &trans  &kp LS(LA(K_VOLUME_UP))  &trans  &trans  &kp K_PLAY_PAUSE               &trans
+&trans  &trans        &kp LS(LA(LC(LG(S))))  &kp LS(LA(K_VOLUME_DOWN))  &trans        &trans                                 &trans  &kp LS(LA(LC(LG(J))))    &trans  &trans  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SINGLE_QUOTE))))
+&trans  &trans        &trans                 &kp LS(LC(LA(LG(C))))      &trans        &trans                 &trans  &trans  &trans  &trans                   &trans  &trans  &trans                         &trans
+&trans  &trans        &trans                 &trans                     &trans        &trans                 &trans  &trans  &trans                                           &trans                         &trans
             >;
         };
 
@@ -100,12 +100,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
-            >;
-        };
-
-        scroll_layer {
-            label = "Scroll";
-            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -114,14 +108,25 @@
             >;
         };
 
+        scroll_layer {
+            label = "Scroll";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                  &trans                   &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME              &kp LG(LS(LEFT_BRACE))  &kp LS(LG(RIGHT_BRACE))  &kp END                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT_ARROW        &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT_ARROW        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN           &kp PAGE_UP              &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                        &trans  &trans
+            >;
+        };
+
         snipe_layer {
             label = "Snipe";
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans                  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
     };
