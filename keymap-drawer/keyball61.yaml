@@ -355,10 +355,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+{
+  - {t: 'Gui+[', s: 'Gui+{'}
   - PgDn
   - {t: PgUp, type: held alternate}
-  - {t: 'Gui+}', type: held alternate}
+  - {t: 'Gui+]', s: 'Gui+}', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
