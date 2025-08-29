@@ -106,11 +106,11 @@
         scroll_layer {
             label = "Scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans              &trans                  &trans                   &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME            &kp LG(LS(LEFT_BRACE))  &kp LS(LG(RIGHT_BRACE))  &kp END              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT_ARROW      &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT_ARROW      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACE)  &kp PAGE_DOWN           &kp PAGE_UP              &kp LG(RIGHT_BRACE)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                  &trans                   &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME              &kp LG(LS(LEFT_BRACE))  &kp LS(LG(RIGHT_BRACE))  &kp END                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT_ARROW        &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT_ARROW        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN           &kp PAGE_UP              &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                        &trans  &trans
             >;
         };
 
