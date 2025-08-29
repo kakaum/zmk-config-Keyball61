@@ -60,7 +60,7 @@
 
         lower_layer {
             bindings = <
-&trans                 &trans             &trans          &trans          &trans           &trans                  &trans         &trans        &trans        &trans        &trans  &kp DELETE
+&none                  &none              &none           &none           &none            &none                   &trans         &trans        &trans        &trans        &trans  &kp DELETE
 &trans                 &trans             &trans          &mmv MOVE_UP    &trans           &trans                  &kp LS(EQUAL)  &kp N7        &kp N8        &kp N9        &trans  &kp MINUS
 &kp LC(LA(LG(SPACE)))  &kp LC(LA(LG(A)))  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                  &kp EQUAL      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
 &trans                 &kp LC(LA(LG(Z)))  &mkp MCLK       &mkp LCLK       &mkp RCLK        &trans  &trans  &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp RETURN
@@ -95,11 +95,6 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
