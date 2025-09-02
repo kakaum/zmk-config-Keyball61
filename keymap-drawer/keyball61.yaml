@@ -207,7 +207,7 @@ layers:
   - Hyper+T
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Alt+VOLUME UP
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
