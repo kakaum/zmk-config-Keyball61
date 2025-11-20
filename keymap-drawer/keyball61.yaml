@@ -36,15 +36,15 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - RETURN
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
   - V
   - B
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '=', s: +}
+  - {t: '-', s: _}
   - N
   - M
   - {t: ',', s: <}
@@ -54,7 +54,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-command$$
+  - Snipe
   - Scroll
   - $$mdi:apple-keyboard-command$$
   - Lower
@@ -72,8 +72,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,24 +81,24 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+=, s: Sft++}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+Gui+$$mdi:keyboard-space$$
   - Ctl+Alt+Gui+A
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '4'
   - {t: '5', s: '%'}
   - '6'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+Gui+Z
   - $$mdi:mouse-scroll-wheel$$
@@ -107,12 +107,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
   - '3'
   - {t: '$$mdi:transfer$$', type: trans}
-  - RETURN
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -426,7 +426,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
