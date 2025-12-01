@@ -98,7 +98,7 @@ layers:
   - {t: '5', s: '%'}
   - '6'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+Gui+Z
   - $$mdi:mouse-scroll-wheel$$
